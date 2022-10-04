@@ -8,7 +8,6 @@ import kotlinx.coroutines.flow.Flow
 interface NoteRepository {
 
     fun createNote(note: Note) : Flow<Unit>
-    fun createNote(note: Note) : Flow<Unit>
 
     fun editNote(note: Note) : Flow<Unit>
 
