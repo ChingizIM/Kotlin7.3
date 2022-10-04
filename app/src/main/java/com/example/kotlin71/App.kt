@@ -3,7 +3,9 @@ package com.example.kotlin71
 import android.app.Application
 import androidx.room.Room
 import com.example.kotlin71.data.localdb.NoteDataBase
+import dagger.hilt.android.HiltAndroidApp
 
+@HiltAndroidApp
 class App:Application(){
 companion object {
     lateinit var  roomNoteDatabase: NoteDataBase

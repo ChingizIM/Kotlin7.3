@@ -1,8 +1,9 @@
 package com.example.kotlin71.domain.usecase
 
 import com.example.kotlin71.domain.repository.NoteRepository
+import javax.inject.Inject
 
-class GetAllNotesUseCase(
+class GetAllNotesUseCase @Inject constructor(
     private val noteRepository: NoteRepository
 ) {
 
