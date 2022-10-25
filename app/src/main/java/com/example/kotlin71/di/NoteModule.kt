@@ -33,6 +33,6 @@ object NoteModule {
     fun provideNoteDao(noteDataBase: NoteDataBase) = noteDataBase.noteDao()
 
     @Provides
-    fun provideNoteRepository(noteDao: NoteDao)= NoteRepositoryImpl(noteDao)
+    fun provideNoteRepository(noteDao: NoteDao): NoteRepository = NoteRepositoryImpl(noteDao)
     }
 
